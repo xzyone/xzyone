@@ -1,258 +1,199 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Linux 相关 | Xzy® Homepage</title>
-<meta name="description" content="成家先立业">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1570351915964">
-
+<meta name="description" content="成家先立业" />
+<link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1570352966439">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://xzy.one/styles/main.css">
 
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://xzy.one">Xzy® Homepage</a></h3>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://xzy.one">
+  <img class="avatar" src="https://xzy.one/images/avatar.png?v=1570352966439" alt="">
+  </a>
+  <h1 class="site-title">
+    Xzy® Homepage
+  </h1>
+  <p class="site-description">
+    成家先立业
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
   </div>
-</nav>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>Linux 相关</h1>
-            <p class="article-meta">
-              2019-10-05
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Linux 相关
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-10-05
+              </span>
+              <span>
+                1 min read
+              </span>
               
-                <a href="https://xzy.one/tag/bdjPAeIZ8" class="badge ">
-                  Linux
+                <a href="https://xzy.one/tag/bdjPAeIZ8" class="post-tag">
+                  # Linux
                 </a>
               
-            </p>
+            </div>
             
-            <div class="post-content">
-              <p>记录使用Linux过程中的相关操作</p>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>记录使用Linux过程中的相关操作</p>
 <!-- more -->
 <hr>
 <h3 id="为不是root登录的机器设置root密码并启用root登录">为不是root登录的机器设置root密码并启用root登录</h3>
 <p><code>echo root:password |sudo chpasswd root sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config; sudo service sshd restart</code></p>
 <hr>
 
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E4%B8%BA%E4%B8%8D%E6%98%AFroot%E7%99%BB%E5%BD%95%E7%9A%84%E6%9C%BA%E5%99%A8%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%E5%B9%B6%E5%90%AF%E7%94%A8root%E7%99%BB%E5%BD%95">为不是root登录的机器设置root密码并启用root登录</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
             </div>
           </article>
         </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
-        
-          
-            <div class="paper" data-aos="fade-in">
-              <div id="gitalk-container"></div>
-            </div>
-          
 
-          
         
-      </div>
 
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://xzy.one/images/avatar.png?v=1570351915964" class="no-responsive avatar">
-    <div class="text-muted">成家先立业</div>
-    <div class="social-container">
-      
-        
-          <a href="tencent://Message/?Uin=981005826&amp;websiteName=q-zone.qq.com&amp;Menu=yes" target="_blank">
-            <i class="fab fa-qq"></i>
-          </a>
-        
-      
-        
-          <a href="https://weibo.com/xzylosg" target="_blank">
-            <i class="fab fa-weibo"></i>
-          </a>
-        
-      
-        
-          <a href="JavaScript:void(0)" target="_blank">
-            <i class="fab fa-weixin"></i>
-          </a>
-        
-      
-        
-      
-        
-          <a href="https://github.com/xzyone" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
         
           
-            <li>
-              <a href="https://xzy.one/post/java-bi-ji">Java笔记</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://xzy.one/post/zi-jian-ti-zi">自建梯子</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://xzy.one/post/hello-one">Hello ONE</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://xzy.one/post/linux-xiang-guan">Linux 相关</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://xzy.one/tag/a9uQGEafW" class="badge secondary">
-          GFW
-        </a>
-      
-        <a href="https://xzy.one/tag/XgJAH2h7h" class="badge secondary">
-          one
-        </a>
-      
-        <a href="https://xzy.one/tag/bdjPAeIZ8" class="badge secondary">
-          Linux
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://xzy.one" target="_blank">Xzy®</a> | <a class="rss" href="https://xzy.one/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
+<div id="gitalk-container"></div>
 
-    </div>
+<script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  var gitalk = new Gitalk({
+    clientID: '45c1618d1db856c8ba19',
+    clientSecret: 'c6e9a9bb25cbe658cc393aa545791785dc0482d3',
+    repo: 'xzyone.github.io',
+    owner: 'xzyone',
+    admin: ['xzyone'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
 
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
 
+          
+        
 
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
+        <div class="site-footer">
+  Powered by <a href="https://xzy.one" target="_blank">Xzy®</a> | 
+  <a class="rss" href="https://xzy.one/atom.xml" target="_blank">RSS</a>
+</div>
 
-      var gitalk = new Gitalk({
-        clientID: '45c1618d1db856c8ba19',
-        clientSecret: 'c6e9a9bb25cbe658cc393aa545791785dc0482d3',
-        repo: 'xzyone.github.io',
-        owner: 'xzyone',
-        admin: ['xzyone'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+<script>
+  hljs.initHighlightingOnLoad()
 
-      gitalk.render('gitalk-container')
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
 
-    </script>
-  
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
 
-  
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
 
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
 
+</script>
 
-
+      </div>
+    </div>
   </body>
 </html>
