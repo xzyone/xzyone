@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
     <title>Xzy® Homepage</title>
-    <updated>2019-10-06T09:23:17.546Z</updated>
+    <updated>2019-10-06T09:29:36.137Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
@@ -11,47 +11,11 @@
     <icon>https://xzy.one/favicon.ico</icon>
     <rights>All rights reserved 2019, Xzy® Homepage</rights>
     <entry>
-        <title type="html"><![CDATA[自建梯子]]></title>
-        <id>https://xzy.one/post/zi-jian-ti-zi</id>
-        <link href="https://xzy.one/post/zi-jian-ti-zi">
-        </link>
-        <updated>2019-10-05T20:10:23.000Z</updated>
-        <summary type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
-<!-- more -->
-<p>一键安装 ✈️✈️✈️<br>
-使用 root 用户登录，运行以下命令：</p>
-<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
-chmod +x shadowsocksR.sh
-./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
-</code></pre>
-<p>安装BBR</p>
-<pre><code>wget https://github.com/tcp-nanqinlang/general/releases/download/3.4.5.1/tcp_nanqinlang-pro-3.4.5.1.sh
-bash tcp_nanqinlang-pro-3.4.5.1.sh
-</code></pre>
-<p>四合一</p>
-<pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;
-chmod +x tcp.sh
-./tcp.sh
-</code></pre>
-<p>防火墙添加端口：<br>
-firewall-cmd --permanent --zone=public --add-port=25000-25100/tcp<br>
-firewall-cmd --permanent --zone=public --add-port=25000-25100/udp<br>
-firewall-cmd --reload</p>
-<p>命令</p>
-<pre><code>开启：/etc/init.d/shadowsocks start
-停止：/etc/init.d/shadowsocks stop
-重启：/etc/init.d/shadowsocks restart
-状态：/etc/init.d/shadowsocks status</code></pre>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Hello ONE]]></title>
         <id>https://xzy.one/post/hello-one</id>
         <link href="https://xzy.one/post/hello-one">
         </link>
-        <updated>2019-10-05T18:59:22.000Z</updated>
+        <updated>2019-10-05T12:59:22.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  今天重建了ONE主页，采用<strong>Gridea</strong> + <strong>Github Page</strong> 静态博客，记录知识、笔记...<br>
 ✍️  而原有的<strong>Xzy.ES</strong>中文博客继续用来记录生活、心情、创意...</p>
 ]]></summary>
@@ -73,69 +37,6 @@ firewall-cmd --reload</p>
 <p>未来，它一定会成为你离不开的伙伴</p>
 <p>尽情发挥你的才华吧！</p>
 <p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java笔记]]></title>
-        <id>https://xzy.one/post/java-bi-ji</id>
-        <link href="https://xzy.one/post/java-bi-ji">
-        </link>
-        <updated>2019-10-05T14:41:00.000Z</updated>
-        <content type="html"><![CDATA[<p>Main: public static void main(String[] args)</p>
-<p>\n 换行 \t 制表符(多个空格)</p>
-<p>关键字所有字母都是小写</p>
-<p>在java中，数据类型分为基本数据类型和引用数据类型，其中基本数据类型有八种，其余全是引用数据类型。</p>
-<hr>
-<h3 id="八种基本数据类型">八种基本数据类型</h3>
-<p><strong>整数类型</strong><br>
-byte 一个字节=8bit（-128~127，声明byte赋值不能超过这个范围）<br>
-short 2字节 (-2<sup>15~2</sup>15-1)  int i = 1<br>
-int   4字节 (-2<sup>31~2</sup>31-1)  short s = 1<br>
-long  8字节 (-2<sup>63~2</sup>63-1)  long l = 3l (赋值后加l表示long类型)</p>
-<p><strong>浮点类型</strong><br>
-double d = 1.22<br>
-float f = 1.22f</p>
-<p><strong>字符类型</strong>：用英文单引号括起来的单个的字母数字符号<br>
-char c1 = 'c'<br>
-char c2 = '1'<br>
-char c3 = '%'<br>
-char c4 = '\n'<br>
-char c5 = ''</p>
-<p>**布尔类型（正负） **<br>
-boolean b1 = true<br>
-boolean b2 = false</p>
-<h3 id="引用数据类型">引用数据类型</h3>
-<p><strong>字符串</strong>：由多个字母数字符号共同组成的一个串，用双引号括起来<br>
-String str == &quot;Hello world&quot;;<br>
-System.out.println(str);<br>
-String是引用类型，可以使用null作为值</p>
-<p>String s0 = &quot;Hello&quot;;<br>
-String s1 = &quot;Hello&quot;;<br>
-String s2 = &quot;He&quot; + &quot;ll&quot; + &quot;o&quot;; 在内存中只存在一个“Hello”<br>
-假设&quot;Hello&quot;的内存地址为xxxx，当声明s0变量时给s0变量赋值&quot;Hello&quot;，实际是让s0变量引用“hello”的内存地址xxxx;当再声明s1时同样引用同一个地址xxxx；而int i0=1和int i1=1 则会在内存中储存两个1的值</p>
-<hr>
-<p>char类型数据与数字进行计算时，转化为相应ASCII码进行计算</p>
-<p>整数\整数 舍弃小数部分<br>
-int = 0;<br>
-int k = i++：k=0,i=1<br>
-int k = ++i: i=1,K=1</p>
-<p>字符串的+=是拼接</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Linux 相关]]></title>
-        <id>https://xzy.one/post/linux-xiang-guan</id>
-        <link href="https://xzy.one/post/linux-xiang-guan">
-        </link>
-        <updated>2019-10-05T14:18:03.000Z</updated>
-        <summary type="html"><![CDATA[<p>记录使用Linux过程中的相关操作</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>记录使用Linux过程中的相关操作</p>
-<!-- more -->
-<hr>
-<h3 id="为不是root登录的机器设置root密码并启用root登录">为不是root登录的机器设置root密码并启用root登录</h3>
-<p><code>echo root:password |sudo chpasswd root sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config; sudo service sshd restart</code></p>
-<hr>
 ]]></content>
     </entry>
 </feed>
