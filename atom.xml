@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
-    <title>Xzy®Homepage</title>
-    <updated>2019-10-04T20:07:23.584Z</updated>
+    <title>Xzy® Homepage</title>
+    <updated>2019-10-06T07:16:41.509Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
     <subtitle>成家先立业</subtitle>
     <logo>https://xzy.one/images/avatar.png</logo>
     <icon>https://xzy.one/favicon.ico</icon>
-    <rights>All rights reserved 2019, Xzy®Homepage</rights>
+    <rights>All rights reserved 2019, Xzy® Homepage</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <title type="html"><![CDATA[Hello ONE]]></title>
         <id>https://xzy.one/post/hello-gridea</id>
         <link href="https://xzy.one/post/hello-gridea">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+        <updated>2018-12-11T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  今天Xzy.ES中文博客分享生活心情，Xzy.ONE<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+        <content type="html"><![CDATA[<p>👏  今天Xzy.ES中文博客分享生活心情，Xzy.ONE<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
 <h2 id="特性">特性👇</h2>
 <p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
 <p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
