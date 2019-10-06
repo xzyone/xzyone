@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
     <title>Xzy® Homepage</title>
-    <updated>2019-10-06T08:08:06.010Z</updated>
+    <updated>2019-10-06T08:20:21.721Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
@@ -10,6 +10,52 @@
     <logo>https://xzy.one/images/avatar.png</logo>
     <icon>https://xzy.one/favicon.ico</icon>
     <rights>All rights reserved 2019, Xzy® Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux 相关]]></title>
+        <id>https://xzy.one/post/linux-xiang-guan</id>
+        <link href="https://xzy.one/post/linux-xiang-guan">
+        </link>
+        <updated>2019-10-06T02:18:03.000Z</updated>
+        <content type="html"><![CDATA[<p>记录使用Linux过程中的相关操作</p>
+<p><code>echo root:password |sudo chpasswd root sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config; sudo service sshd restart</code></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[自建梯子]]></title>
+        <id>https://xzy.one/post/zi-jian-ti-zi</id>
+        <link href="https://xzy.one/post/zi-jian-ti-zi">
+        </link>
+        <updated>2019-10-06T02:10:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
+<!-- more -->
+<p>一键安装 ✈️✈️✈️<br>
+使用 root 用户登录，运行以下命令：</p>
+<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
+chmod +x shadowsocksR.sh
+./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
+</code></pre>
+<p>安装BBR</p>
+<pre><code>wget https://github.com/tcp-nanqinlang/general/releases/download/3.4.5.1/tcp_nanqinlang-pro-3.4.5.1.sh
+bash tcp_nanqinlang-pro-3.4.5.1.sh
+</code></pre>
+<p>四合一</p>
+<pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;
+chmod +x tcp.sh
+./tcp.sh
+</code></pre>
+<p>防火墙添加端口：<br>
+firewall-cmd --permanent --zone=public --add-port=25000-25100/tcp<br>
+firewall-cmd --permanent --zone=public --add-port=25000-25100/udp<br>
+firewall-cmd --reload</p>
+<p>命令</p>
+<pre><code>开启：/etc/init.d/shadowsocks start
+停止：/etc/init.d/shadowsocks stop
+重启：/etc/init.d/shadowsocks restart
+状态：/etc/init.d/shadowsocks status</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello ONE]]></title>
         <id>https://xzy.one/post/hello-one</id>
