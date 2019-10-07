@@ -7,7 +7,7 @@
 <title>
     自建梯子 | Xzy®
 </title>
-<link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1570411614938">
+<link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1570411652571">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -35,7 +35,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://xzy.one">
-                <img class="avatar" src="https://xzy.one/images/avatar.png?v=1570411614938" alt="">
+                <img class="avatar" src="https://xzy.one/images/avatar.png?v=1570411652571" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -136,10 +136,11 @@ bash tcp_nanqinlang-pro-3.4.5.1.sh
 chmod +x tcp.sh
 ./tcp.sh
 </code></pre>
-<p>防火墙添加端口：<br>
-firewall-cmd --permanent --zone=public --add-port=25000-25100/tcp<br>
-firewall-cmd --permanent --zone=public --add-port=25000-25100/udp<br>
-firewall-cmd --reload</p>
+<p>防火墙添加端口：</p>
+<pre><code>firewall-cmd --permanent --zone=public --add-port=25000-25100/tcp
+firewall-cmd --permanent --zone=public --add-port=25000-25100/udp
+firewall-cmd --reload
+</code></pre>
 <p>命令</p>
 <pre><code>开启：/etc/init.d/shadowsocks start
 停止：/etc/init.d/shadowsocks stop
@@ -161,7 +162,7 @@ firewall-cmd --reload</p>
                                 <!-- id-card -->
                                 
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://xzy.one/images/avatar.png?v=1570411614938)">
+        <div class="id_card-avatar" style="background-image: url(https://xzy.one/images/avatar.png?v=1570411652571)">
         </div>
         <h1 class="id_card-title">
             Xzy®
