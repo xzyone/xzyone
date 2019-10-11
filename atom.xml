@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
     <title>Xzy®</title>
-    <updated>2019-10-11T09:21:56.193Z</updated>
+    <updated>2019-10-11T09:23:14.775Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
@@ -116,6 +116,44 @@ RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]</p>
 <p>未来，它一定会成为你离不开的伙伴</p>
 <p>尽情发挥你的才华吧！</p>
 <p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[自建梯子]]></title>
+        <id>https://xzy.one/post/zi-jian-ti-zi</id>
+        <link href="https://xzy.one/post/zi-jian-ti-zi">
+        </link>
+        <updated>2019-10-05T02:10:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
+<!-- more -->
+<p>一键安装 ✈️✈️✈️<br>
+使用 root 用户登录，运行以下命令：</p>
+<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
+chmod +x shadowsocksR.sh
+./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
+</code></pre>
+<p>安装BBR</p>
+<pre><code>wget https://github.com/tcp-nanqinlang/general/releases/download/3.4.5.1/tcp_nanqinlang-pro-3.4.5.1.sh
+bash tcp_nanqinlang-pro-3.4.5.1.sh
+</code></pre>
+<p>四合一</p>
+<pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;
+chmod +x tcp.sh
+./tcp.sh
+</code></pre>
+<p>防火墙添加端口：</p>
+<pre><code>firewall-cmd --permanent --zone=public --add-port=25000-25100/tcp
+firewall-cmd --permanent --zone=public --add-port=25000-25100/udp
+firewall-cmd --reload
+</code></pre>
+<p>命令</p>
+<pre><code>开启：/etc/init.d/shadowsocks start
+停止：/etc/init.d/shadowsocks stop
+重启：/etc/init.d/shadowsocks restart
+状态：/etc/init.d/shadowsocks status
+</code></pre>
 ]]></content>
     </entry>
 </feed>
