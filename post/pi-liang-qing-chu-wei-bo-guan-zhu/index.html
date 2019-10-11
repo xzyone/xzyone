@@ -1,7 +1,7 @@
-
+<!DOCTYPE html>
 <html>
   <head lang="zh">
-   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
 <meta content="telephone=no" name="format-detection"/>
@@ -9,7 +9,7 @@
 <meta name="description" content="成家先立业">
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 
-<title>Xzy® Homepage</title>
+<title>批量清除微博关注 | Xzy® Homepage</title>
 <link href="https://xzy.one/styles/main.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.css"/>
 <script src="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js"></script>
@@ -52,7 +52,7 @@ function pjax() {
   </head>
 
   <body>
-    <div class="header">
+     <div class="header">
       <div class="logo_title">
 		  
         <div class="title animated fadeInDown"><img id="img1" style="display:inline-block;" src="https://xzy.one/images/avatar.png"/>
@@ -238,91 +238,197 @@ var r = 0;
 
 </style>
 
-
     <div class="main" id="pjax-container">
       <div class="main-inner">
 
 
 <div class="content">
-	
-	
-  <div class="list_with_title">
-
-    <div class="listing_title">2019</div>
-
-	  
-    <div class="listing">
-      <div class="listing-item">
-		  
-                                
-        <div class="listing_post"><a href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu" title="批量清除微博关注" >批量清除微博关注</a>
-
-          <div class="post_date"><span class="date">2019-10-11</span>
-
-          </div>
-
-        </div>
- 
-                            
-                                
-        <div class="listing_post"><a href="https://xzy.one/post/301-chong-ding-xiang-ji-he" title="301重定向集合" >301重定向集合</a>
-
-          <div class="post_date"><span class="date">2019-10-09</span>
-
-          </div>
-
-        </div>
- 
-                            
-                                
-        <div class="listing_post"><a href="https://xzy.one/post/hello-one" title="Hello ONE" >Hello ONE</a>
-
-          <div class="post_date"><span class="date">2019-10-05</span>
-
-          </div>
-
-        </div>
- 
-                            
-                                
-        <div class="listing_post"><a href="https://xzy.one/post/linux-xiang-guan" title="Linux 相关" >Linux 相关</a>
-
-          <div class="post_date"><span class="date">2019-10-05</span>
-
-          </div>
-
-        </div>
- 
-                            
-                                
-        <div class="listing_post"><a href="https://xzy.one/post/zi-jian-ti-zi" title="自建梯子" >自建梯子</a>
-
-          <div class="post_date"><span class="date">2019-10-04</span>
-
-          </div>
-
-        </div>
- 
-                            
-      </div>
 
 
-		
-		
-		
-    </div>
 
 
+
+
+  <div class="post_page" >
+
+<div class="post">
+  <div class="post_title sm_margin">
+    <h2><a>批量清除微博关注</a>
+
+
+
+    </h2>
   </div>
+  
+<script>
+function lan(){
+	if (document.getElementById("lan").innerText == "繁"){
+		var s=document.getElementById("tongwenlet_cn");
+		if(s != null){
+		document.body.removeChild(s);
+		}
+		var s = document.createElement("script");
+		s.language = "javascript";
+		s.type = "text/javascript";
+		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_tw.js";
+		s.id = "tongwenlet_cn";
+		document.body.appendChild(s);
+		document.getElementById("lan").innerHTML = "简"
+	}
+	else if(document.getElementById("lan").innerText == "簡"){
+		var s=document.getElementById("tongwenlet_cn");
+		if(s != null){
+		document.body.removeChild(s);
+		}
+		var s = document.createElement("script");
+		s.language = "javascript";
+		s.type = "text/javascript";
+		s.src = "https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/bookmarklet_cn.js";
+		s.id = "tongwenlet_cn";
+		document.body.appendChild(s);
+		document.getElementById("lan").innerHTML = "繁"
+		}
+}
+
+function change(){	
+    var rand = Math.random()*1+1;
+    var num = window.getComputedStyle(document.getElementsByName("show")[0],undefined).fontSize;
+	num = num.slice(0,-2); 
+    document.getElementById("show").style.fontSize = num - rand +'px';
+}
+</script>
+
+  <div class="post_details">
+    <div class="info"><i class="fa fa-clock-o"></i>
+<span class="date_info">2019-10-11</span>
+<i class="fa fa-eye"></i>
+
+<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
+
+<i class="fa fa-bookmark-o"></i>
+<span class="tags_info weaklink">
+	
+
+</span>
+<span>1 min read</span>
+&nbsp
+&nbsp
+<i class="fa fa-share"></i>
+<a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu"><i class="fa fa-qrcode"></i></a>
+<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu&sharesource=qzone&title=批量清除微博关注&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
+<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu&sharesource=weibo&title=批量清除微博关注 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
+&nbsp
+&nbsp
+<a id="daxiao" href="javascript:void(0);" onclick="change();" title="调整字体大小"><i class="fa fa-font"></i></a>
+&nbsp
+&nbsp
+<a id="lan" href="javascript:void(0);" onclick="lan();" title="调整简繁体">繁</a>
+</div>
+  </div>
+
+  <div class="post_content markdown">
+  &nbsp
+  <img id="mememe" src="//source.unsplash.com/800x400/?arts,weather">
+    <div name="show" id="show">
+	<p class="md_block"><span class="md_line md_line_start md_line_end"><p>在F12控制台输入</p>
+<pre><code>/ 点击批量管理 /
+$(&quot;.btn_link.S_txt1&quot;).click();
+/ 勾选全部 /
+$$('.member_li').forEach(l =&gt; l.click());
+/ 点击取消关注 /
+$('.W_btn_a[node-type=&quot;cancelFollowBtn&quot;]').click();
+/ 点击确认按钮 /
+$('[node-type=&quot;ok&quot;]').click();
+</code></pre>
+<p>执行</p>
+</span></p></div>
+	<br>
+	<hr>
+<div style="color: #ccc;font-size:14px;"><i class="fa fa-user"></i>本文由<a rel="license" href="/">Xzy® Homepage</a>创作</div>	
+<div style="color: #ccc;font-size:14px;"><i class="fa fa-cc"></i>该文章采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。转载请注明出处！</div>
+<div style="color: #ccc;font-size:14px;"><i class="fa fa-clock-o"></i>发布时间为：2019-10-11</div>    
+	 <p class="md_block">
+    <div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" src="https://xzy.one/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img class="wechat-img" src="https://xzy.one/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+<div style="text-align:center;color: #ccc;font-size:14px;">如果觉得这篇文章对您有帮助，可以请作者喝一杯饮料哦🥤</div>    
+</p> 
+</div>
+</div>
+
+<style type="text/css">
+#mememe {
+	border:3px;
+	border-radius:5px;
+    background-repeat: no-repeat;
+    height: 100%;
+	width: 100%;
+	display: inline-block;
+	border-radius:5px; 
+}
+</style>
+
+<script>
+var link = "" ;
+$("img").each( (i,o) => {
+	var o = $(o);
+	if( o.attr("src").indexOf("sinaimg") > 0 || o.attr("src").indexOf("qpic") > 0 || o.attr("src").indexOf("baidu") > 0 || o.attr("src").indexOf("sinaimg") > 0){
+		o.attr("referrerpolicy","no-referrer");
+		link = o.attr("src");
+		o.attr("src",link);
+	}
+});
+</script>
+
+<div style="width:100%;overflow:hidden">
+
+          <div style="float:right;text-align:right;color:#ccc;font-size:18px;width:50%;">
+            下一篇
+            <a href="https://xzy.one/post/301-chong-ding-xiang-ji-he">
+              <h3 class="post-title">
+                301重定向集合
+              </h3>
+            </a>
+          </div>
+
+
 
 </div>
 
+<div class="doc_comments">
+
+          
+			<div id="gitalk-container"></div>
+            <link href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css" rel="stylesheet">
+<script>
+  var gitalk = new Gitalk({
+    clientID: '45c1618d1db856c8ba19',
+    clientSecret: 'c6e9a9bb25cbe658cc393aa545791785dc0482d3',
+    repo: 'xzyone.github.io',
+    owner: 'xzyone',
+    admin: ['xzyone'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+
+          
+			  
+          
+        
+</div>
+
+  </div>
+</div>
 
 
       </div>
+<div class="toc-container">
 
+</div>
     </div>
-    <div class="footer">
+	
+   <div class="footer">
 <div class="site_footer_wrap"><div class="site_footer">
 
       <div class="mysocials"><div class="my_socials">

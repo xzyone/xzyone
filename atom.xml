@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
     <title>Xzy® Homepage</title>
-    <updated>2019-10-11T09:52:00.432Z</updated>
+    <updated>2019-10-11T19:36:00.458Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://xzy.one/images/avatar.png</logo>
     <icon>https://xzy.one/favicon.ico</icon>
     <rights>All rights reserved 2019, Xzy® Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[批量清除微博关注]]></title>
+        <id>https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu</id>
+        <link href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">
+        </link>
+        <updated>2019-10-11T13:30:04.000Z</updated>
+        <content type="html"><![CDATA[<p>在F12控制台输入</p>
+<pre><code>/ 点击批量管理 /
+$(&quot;.btn_link.S_txt1&quot;).click();
+/ 勾选全部 /
+$$('.member_li').forEach(l =&gt; l.click());
+/ 点击取消关注 /
+$('.W_btn_a[node-type=&quot;cancelFollowBtn&quot;]').click();
+/ 点击确认按钮 /
+$('[node-type=&quot;ok&quot;]').click();
+</code></pre>
+<p>执行</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[301重定向集合]]></title>
         <id>https://xzy.one/post/301-chong-ding-xiang-ji-he</id>
@@ -108,6 +127,22 @@ RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]
 <p>未来，它一定会成为你离不开的伙伴</p>
 <p>尽情发挥你的才华吧！</p>
 <p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux 相关]]></title>
+        <id>https://xzy.one/post/linux-xiang-guan</id>
+        <link href="https://xzy.one/post/linux-xiang-guan">
+        </link>
+        <updated>2019-10-05T02:18:03.000Z</updated>
+        <summary type="html"><![CDATA[<p>记录使用Linux过程中的相关操作</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>记录使用Linux过程中的相关操作</p>
+<!-- more -->
+<hr>
+<h3 id="为不是root登录的机器设置root密码并启用root登录">为不是root登录的机器设置root密码并启用root登录</h3>
+<p><code>echo root:password |sudo chpasswd root sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config; sudo service sshd restart</code></p>
+<hr>
 ]]></content>
     </entry>
     <entry>
