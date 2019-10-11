@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
     <title>Xzy®</title>
-    <updated>2019-10-11T09:23:14.775Z</updated>
+    <updated>2019-10-11T09:25:35.619Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
@@ -15,8 +15,11 @@
         <id>https://xzy.one/post/301-chong-ding-xiang-ji-he</id>
         <link href="https://xzy.one/post/301-chong-ding-xiang-ji-he">
         </link>
-        <updated>2019-10-11T03:11:25.000Z</updated>
+        <updated>2019-10-10T21:11:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>如果是你用的Linux主机，一般建议使用.htaccess来做301永久重定向，这样既方便又执行效率高。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>如果是你用的Linux主机，一般建议使用.htaccess来做301永久重定向，这样既方便又执行效率高。</p>
+<!-- more -->
 <ol>
 <li>
 <p>重定向xzy.one到www.xzy.one，请在.htaccess中加入下列代码：</p>
@@ -123,7 +126,7 @@ RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]</p>
         <id>https://xzy.one/post/zi-jian-ti-zi</id>
         <link href="https://xzy.one/post/zi-jian-ti-zi">
         </link>
-        <updated>2019-10-05T02:10:23.000Z</updated>
+        <updated>2019-10-04T20:10:23.000Z</updated>
         <summary type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
