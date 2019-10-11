@@ -7,7 +7,7 @@
 <title>
     Xzy®
 </title>
-<link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1570411652571">
+<link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1570785709411">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -27,7 +27,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://xzy.one">
-                <img class="avatar" src="https://xzy.one/images/avatar.png?v=1570411652571" alt="">
+                <img class="avatar" src="https://xzy.one/images/avatar.png?v=1570785709411" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -99,6 +99,100 @@
         
             <article class="post i-card">
                 <h2 class="post-title">
+                    <a href="https://xzy.one/post/301-chong-ding-xiang-ji-he">
+                        301重定向集合
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-10-11</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            如果是你用的Linux主机，一般建议使用.htaccess来做301永久重定向，这样既方便又执行效率高。
+
+
+重定向xzy.one到www.xzy.one，请在.htaccess中加入下列代码：
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.xzy.one$ [NC]
+RewriteRule ^(.*)$ https://www.xzy.one/$1 [L,R=301]
+
+
+重定向www.xzy.one到xzy.one，请在.htaccess文件中加入下列代码：
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^xzy.one$ [NC]
+RewriteRule ^(.*)$ https://xzy.one/$1 [L,R=301]
+
+
+重定向laoyuming.com到www.xinyuing.com，请在.htaccess文件中加入下列代码：
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !laoyuming.com$ [NC]
+RewriteRule ^(.*)$ https://www.xinyuming.com/$1 [L,R=301]
+
+
+重定向laoyuming.com到xinyuing.com，请在.htaccess文件中加入下列代码：
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !laoyuming.com$ [NC]
+RewriteRule ^(.*)$ https://xinyuming.com/$1 [L,R=301]
+
+
+不同域名下，用301将绑定的其他域名重定向到主域名，例如将xzy.space和www.xzy.es统一为www.xzy.one
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^xzy.space$ [OR]
+RewriteCond %{HTTP_HOST} ^www.xzy.esRewriteRule(.∗)
+ RewriteRule ^(.*)RewriteRule(.∗) https://www.xzy.one/$1 [R=301,L]
+
+
+还有一些SEOer觉得index.php和index.html这样的也要重定向www.xzy.one，以防止权重分散。
+RewriteEngine on
+RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]
+
+
+二、301永久重定向设置Nginx服务器conf规则篇
+如果你使用的Linux服务器采用的是Nginx，那么你就要先将conf规则下来。具体路径不同的服务器会不同。
+打开conf文件（如果用的是LNMP0.6一体包则是在/usr/local/nginx/conf/vhost/xzy.one.conf）
+正常的话conf一般前面部分是显示是这样的：
+server{
+	listen 80;
+	server_name www.xzy.one xzy.one;
+
+	index index.html index.htm index.php default.html default.htm default.php;
+	root /home/wwwroot/www.xzy.one;
+}
+
+现在你需要将一段Nginx服务器conf的301永久重定向规则添加在server_name www.xzy.one xzy.one; 下面：
+if ($host != &#39;www.xzy.one&#39; ) {
+	rewrite ^/(.*)$ https://www.xzy.one/$1 permanent;
+}
+
+最后代码conf文件前面的部分应该是显示这样的：
+server{
+	listen 80;
+    server_name www.xzy.one xzy.one; 
+	
+	if ($host != &#39;www.xzy.one&#39; ) {
+		rewrite ^/(.*)$ https://www.xzy.one/$1 permanent;
+	}
+	
+	index index.html index.htm index.php default.html default.htm default.php;
+	root /home/wwwroot/www.xzy.one;
+}
+
+上传该文件覆盖，或者在SSH直接编辑保存。最后执行下列命令，重载配置，完成生效。
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://xzy.one/post/301-chong-ding-xiang-ji-he">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
                     <a href="https://xzy.one/post/hello-one">
                         Hello ONE
                     </a>
@@ -107,7 +201,7 @@
                     <time class="post-time">2019-10-05</time>
                     
                         <a href="https://xzy.one/tag/XgJAH2h7h" class="post-tag i-tag
-                            i-tag-success">
+                            i-tag-other_1">
             #one
         </a>
                         
@@ -138,7 +232,7 @@
                     <!-- 个人信息 -->
                     
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://xzy.one/images/avatar.png?v=1570411652571)">
+        <div class="id_card-avatar" style="background-image: url(https://xzy.one/images/avatar.png?v=1570785709411)">
         </div>
         <h1 class="id_card-title">
             Xzy®

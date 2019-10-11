@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    自建梯子 | Xzy®
+    301重定向集合 | Xzy®
 </title>
 <link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1570785709411">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,51 +106,99 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            自建梯子
+                            301重定向集合
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-10-05</time>
+                            <time class="post-time">2019-10-11</time>
                             
-                                <a href="https://xzy.one/tag/a9uQGEafW" class="post-tag i-tag
-                            i-tag-primary">
-                            #GFW
-                        </a>
-                                
                         </div>
                         
                                 <div class="post-content">
-                                    <p>自用代码记录，备用🤞🤞🤞</p>
-<!-- more -->
-<p>一键安装 ✈️✈️✈️<br>
-使用 root 用户登录，运行以下命令：</p>
-<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
-chmod +x shadowsocksR.sh
-./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
+                                    <p>如果是你用的Linux主机，一般建议使用.htaccess来做301永久重定向，这样既方便又执行效率高。</p>
+<ol>
+<li>
+<p>重定向xzy.one到www.xzy.one，请在.htaccess中加入下列代码：</p>
+<p>RewriteEngine On<br>
+RewriteCond %{HTTP_HOST} !^www.xzy.one$ [NC]<br>
+RewriteRule ^(.*)$ https://www.xzy.one/$1 [L,R=301]</p>
+</li>
+<li>
+<p>重定向www.xzy.one到xzy.one，请在.htaccess文件中加入下列代码：</p>
+<p>RewriteEngine On<br>
+RewriteCond %{HTTP_HOST} !^xzy.one$ [NC]<br>
+RewriteRule ^(.*)$ https://xzy.one/$1 [L,R=301]</p>
+</li>
+<li>
+<p>重定向laoyuming.com到www.xinyuing.com，请在.htaccess文件中加入下列代码：</p>
+<p>RewriteEngine On<br>
+RewriteCond %{HTTP_HOST} !laoyuming.com$ [NC]<br>
+RewriteRule ^(.*)$ https://www.xinyuming.com/$1 [L,R=301]</p>
+</li>
+<li>
+<p>重定向laoyuming.com到xinyuing.com，请在.htaccess文件中加入下列代码：</p>
+<p>RewriteEngine On<br>
+RewriteBase /<br>
+RewriteCond %{HTTP_HOST} !laoyuming.com$ [NC]<br>
+RewriteRule ^(.*)$ https://xinyuming.com/$1 [L,R=301]</p>
+</li>
+<li>
+<p>不同域名下，用301将绑定的其他域名重定向到主域名，例如将xzy.space和www.xzy.es统一为www.xzy.one</p>
+<p>RewriteEngine on<br>
+RewriteCond %{HTTP_HOST} ^xzy.space$ [OR]<br>
+RewriteCond %{HTTP_HOST} ^www.xzy.es<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mi>e</mi><mi>w</mi><mi>r</mi><mi>i</mi><mi>t</mi><mi>e</mi><mi>R</mi><mi>u</mi><mi>l</mi><msup><mi>e</mi><mo>(</mo></msup><mi mathvariant="normal">.</mi><mo>∗</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">
+ RewriteRule ^(.*)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault">u</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mopen mtight">(</span></span></span></span></span></span></span></span><span class="mord">.</span><span class="mord">∗</span><span class="mclose">)</span></span></span></span> https://www.xzy.one/$1 [R=301,L]</p>
+</li>
+<li>
+<p>还有一些SEOer觉得index.php和index.html这样的也要重定向www.xzy.one，以防止权重分散。</p>
+<p>RewriteEngine on<br>
+RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]</p>
+</li>
+</ol>
+<p>二、301永久重定向设置Nginx服务器conf规则篇</p>
+<p>如果你使用的Linux服务器采用的是Nginx，那么你就要先将conf规则下来。具体路径不同的服务器会不同。<br>
+打开conf文件（如果用的是LNMP0.6一体包则是在/usr/local/nginx/conf/vhost/xzy.one.conf）<br>
+正常的话conf一般前面部分是显示是这样的：</p>
+<pre><code>server{
+	listen 80;
+	server_name www.xzy.one xzy.one;
+
+	index index.html index.htm index.php default.html default.htm default.php;
+	root /home/wwwroot/www.xzy.one;
+}
 </code></pre>
-<p>安装BBR</p>
-<pre><code>wget https://github.com/tcp-nanqinlang/general/releases/download/3.4.5.1/tcp_nanqinlang-pro-3.4.5.1.sh
-bash tcp_nanqinlang-pro-3.4.5.1.sh
+<p>现在你需要将一段Nginx服务器conf的301永久重定向规则添加在server_name www.xzy.one xzy.one; 下面：</p>
+<pre><code>if ($host != 'www.xzy.one' ) {
+	rewrite ^/(.*)$ https://www.xzy.one/$1 permanent;
+}
 </code></pre>
-<p>四合一</p>
-<pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;
-chmod +x tcp.sh
-./tcp.sh
+<p>最后代码conf文件前面的部分应该是显示这样的：</p>
+<pre><code>server{
+	listen 80;
+    server_name www.xzy.one xzy.one; 
+	
+	if ($host != 'www.xzy.one' ) {
+		rewrite ^/(.*)$ https://www.xzy.one/$1 permanent;
+	}
+	
+	index index.html index.htm index.php default.html default.htm default.php;
+	root /home/wwwroot/www.xzy.one;
+}
 </code></pre>
-<p>防火墙添加端口：</p>
-<pre><code>firewall-cmd --permanent --zone=public --add-port=25000-25100/tcp
-firewall-cmd --permanent --zone=public --add-port=25000-25100/udp
-firewall-cmd --reload
-</code></pre>
-<p>命令</p>
-<pre><code>开启：/etc/init.d/shadowsocks start
-停止：/etc/init.d/shadowsocks stop
-重启：/etc/init.d/shadowsocks restart
-状态：/etc/init.d/shadowsocks status</code></pre>
+<p>上传该文件覆盖，或者在SSH直接编辑保存。最后执行下列命令，重载配置，完成生效。</p>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://xzy.one/post/hello-one">
+                                <h3 class="post-title">
+                                    Hello ONE
+                                </h3>
+                            </a>
+                        </div>
+                        
                             <div id="disqus_thread"></div>
                             <div id="gitalk-container"></div>
                 </div>
