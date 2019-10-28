@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
     <title>Xzy® Homepage</title>
-    <updated>2019-10-19T13:04:19.078Z</updated>
+    <updated>2019-10-28T01:39:12.833Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
@@ -11,12 +11,24 @@
     <icon>https://xzy.one/favicon.ico</icon>
     <rights>All rights reserved 2019, Xzy® Homepage</rights>
     <entry>
+        <title type="html"><![CDATA[Composer 相关]]></title>
+        <id>https://xzy.one/post/composer</id>
+        <link href="https://xzy.one/post/composer">
+        </link>
+        <updated>2019-10-27T04:35:06.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<h2 id="composer-intall-安装失败解决方法">Composer intall 安装失败解决方法</h2>
+<p>当Composer install 出现下载失败时，删除目录下的composer.lock文件，再重新执行composer install即可</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[批量清除微博关注]]></title>
         <id>https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu</id>
         <link href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">
         </link>
-        <updated>2019-10-11T13:30:04.000Z</updated>
-        <content type="html"><![CDATA[<p>在F12控制台输入</p>
+        <updated>2019-10-11T07:30:04.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>在F12控制台输入</p>
 <pre><code>/ 点击批量管理 /
 $(&quot;.btn_link.S_txt1&quot;).click();
 / 勾选全部 /
@@ -105,11 +117,8 @@ RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]
         <id>https://xzy.one/post/linux-xiang-guan</id>
         <link href="https://xzy.one/post/linux-xiang-guan">
         </link>
-        <updated>2019-10-05T02:18:03.000Z</updated>
-        <summary type="html"><![CDATA[<p>记录使用Linux过程中的相关操作</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>记录使用Linux过程中的相关操作</p>
-<!-- more -->
+        <updated>2019-10-04T20:18:03.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
 <hr>
 <h3 id="为不是root登录的机器设置root密码并启用root登录">为不是root登录的机器设置root密码并启用root登录</h3>
 <p><code>echo root:password |sudo chpasswd root sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config; sudo service sshd restart</code></p>
@@ -121,11 +130,9 @@ RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]
         <id>https://xzy.one/post/zi-jian-ti-zi</id>
         <link href="https://xzy.one/post/zi-jian-ti-zi">
         </link>
-        <updated>2019-10-04T20:10:23.000Z</updated>
-        <summary type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>自用代码记录，备用🤞🤞🤞</p>
-<!-- more -->
+        <updated>2019-10-04T14:10:23.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>自用代码记录，备用🤞🤞🤞</p>
 <p>一键安装 ✈️✈️✈️<br>
 使用 root 用户登录，运行以下命令：</p>
 <pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
@@ -159,13 +166,10 @@ firewall-cmd --reload
         <id>https://xzy.one/post/hello-one</id>
         <link href="https://xzy.one/post/hello-one">
         </link>
-        <updated>2019-10-02T06:59:22.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  今天重建了ONE主页，采用<strong>Gridea</strong> + <strong>Github Page</strong> 静态博客，记录知识、笔记...<br>
+        <updated>2019-10-02T00:59:22.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>👏  今天重建了ONE主页，采用<strong>Gridea</strong> + <strong>Github Page</strong> 静态博客，记录知识、笔记...<br>
 ✍️  而原有的<strong>Xzy.ES</strong>中文博客继续用来记录生活、心情、创意...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  今天重建了ONE主页，采用<strong>Gridea</strong> + <strong>Github Page</strong> 静态博客，记录知识、笔记...<br>
-✍️  而原有的<strong>Xzy.ES</strong>中文博客继续用来记录生活、心情、创意...</p>
-<!-- more -->
 <h2 id="特性">特性👇</h2>
 <p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
 <p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>

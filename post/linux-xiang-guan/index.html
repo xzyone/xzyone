@@ -63,9 +63,8 @@
                         <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
                                 <article class="mdui-p-a-2 post animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
                                     <div class="post-title  mdui-m-b-1">Linux 相关</div>
-                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2019-10-05 04:18:03">2019-10-05 / 1 min read</div>
-                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p>记录使用Linux过程中的相关操作</p>
-<!-- more -->
+                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2019-10-04 22:18:03">2019-10-04 / 1 min read</div>
+                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><!-- more -->
 <hr>
 <h3 id="为不是root登录的机器设置root密码并启用root登录">为不是root登录的机器设置root密码并启用root登录</h3>
 <p><code>echo root:password |sudo chpasswd root sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config; sudo service sshd restart</code></p>
