@@ -1,132 +1,260 @@
 <!DOCTYPE html>
-<html>
-        <head>
-        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
-        <meta charset="utf-8">
-        <title>Composer 相关 | Xzy® Homepage</title>
-        <link rel="stylesheet" href="https://xzy.one/styles/main.css">
-        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1456150_0yg823y0zyh.css">
-        <link href="https://cdn.staticfile.org/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-        <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150374310-2"></script>
-		<script>
-		    window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+<title>Composer 相关 - Xzy® Homepage</title>
+<meta name="description" content="成家先立业">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link type='text/css' rel='stylesheet' href='https://xzy.one/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+<script type="text/javascript" src='https://xzy.one/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+<script >hljs.initHighlightingOnLoad();</script>
+
+  <script type="text/javascript" src='https://xzy.one/media/scripts/zan.js'></script>
+  <script type="text/javascript" src='https://xzy.one/media/scripts/av-min.js'></script>
+  <script type="text/javascript" src='https://xzy.one/media/scripts/Valine.min.js'></script>
+</head>
+
+<body>
+  <div class="layout">
+    <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="layout-header-logo">
+				<a href="https://xzy.one">
+					<img class="logo" src="https://xzy.one/media/images/site_avatar.png?v=1573905868726" alt="">
+				</a>
+			</div>
+			<div class="layout-header-menu d-md-inline-block d-none">
+				<ul class="layout-navigation-list">
+					
+					<li class="layout-navigation-item"><a title="首页" href="/">首页</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="归档" href="/archives">归档</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="标签" href="/tags">标签</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="关于" href="/post/about">关于</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="layout-header-item d-none">
+				<span class="layout-header-action layout-header-search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+			</div>
 			
-			gtag('config', 'UA-150374310-2');
-		</script>
+			<div class="layout-header-item d-md-inline-block d-none">
+				<a class="ltem-feed" href="atom.xml">
+					<i class="fa fa-rss" aria-hidden="true"></i>
+				</a>
+			</div>
+			
+			<div class="layout-header-nav d-md-none d-inline-block">
+				<div class="layout-header-trigger">
+					<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    </head>
-    <body>
-              <header class="header mdui-m-b-5">      
-            <div class="container  ">
-                <div class="index-title animated fadeInDown mdui-text-center mdui-text-color-white mdui-m-b-2" style="animation-delay: 0.2s"><a href="#">XZY</a></div>
-                <div class="mdui-text-color-white animated fadeInDown mdui-text-center  mdui-m-b-3" style="animation-delay: 0.4s">HOMEPAGE</div>
-           
-            <nav id="nav" class="mdui-text-center animated fadeInDown" style="animation-delay: 0.6s">
-                   
-                            <li><a href="/">首页</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                            <li><a href="/archives">归档</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                            <li><a href="/tags">标签</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                            <li><a href="/post/about">关于</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                  </nav>
-                </div>
-        </header>
-        <div class="mdui-container ">
-                <div class="mdui-row">
-                        <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
-                                <article class="mdui-p-a-2 post animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="post-title  mdui-m-b-1">Composer 相关</div>
-                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2019-10-26 17:35:06">2019-10-26 / 1 min read</div>
-                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><!-- more -->
-<h3 id="composer-intall-安装失败解决方法">Composer intall 安装失败解决方法</h3>
-<p>当Composer install 出现下载失败时，删除目录下的composer.lock文件，再重新执行composer install即可</p>
-<br></div>
-                                    <div class="mdui-divider mdui-m-b-2"></div>
-                                    <div class="mdui-row-xs-2 post-fenye">
-                                       
-                                        <div class="mdui-col"> </div>
-                                        
+</div>
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main" role="navigation">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
+			
+			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
+			
 
-                                        
-                                        <div class="mdui-col"><div class="mdui-text-right "><a href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">批量清除微博关注</a></div> </div>
-                                       
-                                      </div>
-                                    <div class="mdui-divider mdui-m-t-2 mdui-m-b-2"></div>
-									<br>
-                                     <script src="https://xzy.one/media/scripts/Valine.min.js"></script>
- <div class="comment"></div>
+		</ul>
+	</div>
+</div>
 
-<script>
-      new Valine({
-            el: '.comment',
-            app_id: 'hPV1Lplqz9N0USUXVdB91X4F-MdYXbMMI',
-            app_key: 'uCAMSVNNrcVlKp4Ylfxy6euR',
-            placeholder: '兄台，快来评论下！',
-            path: window.location.pathname,
-            pageSize: 30,
-            avatar:'mm', 
-       })
+    <div class="layout-content">
+      <div class="layout-content-main">
 
-    </script> 
-<script>
-    if(window.location.hash){
-        var checkExist = setInterval(function() {
-           if ($(window.location.hash).length) {
-              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-              clearInterval(checkExist);
-           }
-        }, 100);
-    }
-</script>
-                                </article>
+        <div class="container">
+          <div class="layout-post">
+            <div class="layout-post-body">
+              <div class="row">
 
-                                    
+                <div class="col-md-12 col-lg-10">
+                  <div class="layout-post-main m-right m-md-right">
+                    <div class="layout-post-header">
+                      <h1 class="layout-post-title">Composer 相关</h1>
+                      <div class="layout-post-meta">
+                        <div class="layout-meta-list">
+                          <span>2019-10-26</span>
+                        </div>
+                        <div class="layout-meta-list">
+                          
                         </div>
                       </div>
-    
-                
+                    </div>
+                    <div class="layout-post-content">
+                      <div class="layout-post-item">
+                        
+                        <!-- more -->
+<h3 id="composer-intall-安装失败解决方法">Composer intall 安装失败解决方法</h3>
+<p>当Composer install 出现下载失败时，删除目录下的composer.lock文件，再重新执行composer install即可</p>
+
+                      </div>
+                    </div>
+                    <div class="layout-post-social">
+                      <div class="layout-social-item">
+                        <div id="/post/composer/" class="leancloud-visitors view" data-flag-title="Composer 相关">
+                          <span class="post-meta-item-text">阅读 </span>
+                          <span class="leancloud-visitors-count"></span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '45c1618d1db856c8ba19',
+    clientSecret: 'c6e9a9bb25cbe658cc393aa545791785dc0482d3',
+    repo: 'xzyone.github.io',
+    owner: 'xzyone',
+    admin: ['xzyone'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+                    
+
+                    
+                    
+
+                    <div class="layout-comments"></div>
+                    <script type="text/javascript">
+                      new Valine({
+                        av: AV,
+                        el: '.layout-comments',
+                        appId: 'e7hSFIsJCyJg2uaQaYDWtesc-MdYXbMMI',
+                        appKey: 'LsdlyJ6vfXjJAk3JYASt5KJ4',
+                        notify: false,
+                        verify: false,
+                        visitor: true,
+                        avatar: 'mp',
+                        placeholder: '加入讨论...'
+                      })
+                    </script>
+
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-2 d-none d-lg-block">
+                  <div class="layout-post-sidebar">
+                    <div class="layout-sidebar-item">
+                      <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#composer-intall-%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95">Composer intall 安装失败解决方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                    </div>
+                  </div>
+                </div>
 
               </div>
-                    <footer class="footer mdui-m-t-5 mdui-text-center">
-                  <div class="copyright">
-                      <p>© 2019 Xzy®  All rights reserved.<br>博客使用 <a href="https://gridea.dev/" title="Gridea"><span>Gridea</span></a> 搭建于 <a href="https://pages.github.com/" title="GitHub Pages"><span>GitHub Pages</span></a><br>主题 宋 作者 <a href="https://shanbu.fun/" title="山卜方"><span>山卜方</span></a></p>
-                  </div>
-               <nav class="social-links">
-                      <ul>
-                        <li class="social-link"><a href="tencent://Message/?Uin=981005826&websiteName=q-zone.qq.com&Menu=yes" target="_blank"><i class="iconfont icon-qq"></i> </a></li>
-						<li class="social-link"><a href="https://weibo.com/xzylosg" target="_blank"><i class="iconfont icon-weibo"></i></a> </li>
-						<li class="social-link"><a href="https://github.com/xzyone" target="_blank"><i class="iconfont icon-github"></i></a> </li>
-                        <li class="social-link"><a href="https://xzy.one/atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a></li>
-                      </ul>
-					  <b>成家先立业</b>
-                    </nav>
-              </footer>
-    </body>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+
+    	<div class="layout-footer">
+		<div class="layout-footer-main">
+			<div class="container">
+
+				<div class="footer-links d-none d-md-block">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<span class="footer-links-item">
+						<a href="tencent://Message/?Uin=981005826&amp;websiteName=q-zone.qq.com&amp;Menu=yes" target="_blank">
+							<i class="fa fa-qq" aria-hidden="true"></i>
+						</a>
+					</span>
+					
+					
+					
+					<span class="footer-links-item">
+						<a href="https://weibo.com/xzylosg" target="_blank">
+							<i class="fa fa-weibo" aria-hidden="true"></i>
+						</a>
+					</span>
+					
+					
+					
+					<span class="footer-links-item">
+						<a href="https://up.xzy.es/img/logo.png" target="_blank">
+							<i class="fa fa-weixin" aria-hidden="true"></i>
+						</a>
+					</span>
+					
+					
+				</div>
+
+				<div class="footer-copy">
+					
+					© 2019 Xzy®  All rights reserved.
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src='https://xzy.one/media/scripts/main.js'></script>
+	<script type="text/javascript" src='https://xzy.one/media/scripts/swiper.js'></script>
+	<script type="text/javascript" src='https://xzy.one/media/scripts/swiper.min.js'></script>
+
+  </div>
+</body>
+
 </html>

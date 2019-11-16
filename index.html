@@ -1,130 +1,408 @@
 <!DOCTYPE html>
-<html>
-        <head>
-        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
-        <meta charset="utf-8">
-        <title>Xzy® Homepage</title>
-        <link rel="stylesheet" href="https://xzy.one/styles/main.css">
-        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1456150_0yg823y0zyh.css">
-        <link href="https://cdn.staticfile.org/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-        <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150374310-2"></script>
-		<script>
-		    window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+<title>Xzy® Homepage</title>
+<meta name="description" content="成家先立业">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link type='text/css' rel='stylesheet' href='https://xzy.one/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+<script type="text/javascript" src='https://xzy.one/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+<script >hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="layout-header-logo">
+				<a href="https://xzy.one">
+					<img class="logo" src="https://xzy.one/media/images/site_avatar.png?v=1573905868726" alt="">
+				</a>
+			</div>
+			<div class="layout-header-menu d-md-inline-block d-none">
+				<ul class="layout-navigation-list">
+					
+					<li class="layout-navigation-item"><a title="首页" href="/">首页</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="归档" href="/archives">归档</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="标签" href="/tags">标签</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="关于" href="/post/about">关于</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="layout-header-item d-none">
+				<span class="layout-header-action layout-header-search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+			</div>
 			
-			gtag('config', 'UA-150374310-2');
-		</script>
+			<div class="layout-header-item d-md-inline-block d-none">
+				<a class="ltem-feed" href="atom.xml">
+					<i class="fa fa-rss" aria-hidden="true"></i>
+				</a>
+			</div>
+			
+			<div class="layout-header-nav d-md-none d-inline-block">
+				<div class="layout-header-trigger">
+					<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    </head>
-    <body>
-          <header class="header mdui-m-b-5">      
-            <div class="container  ">
-                <div class="index-title animated fadeInDown mdui-text-center mdui-text-color-white mdui-m-b-2" style="animation-delay: 0.2s"><a href="#">XZY</a></div>
-                <div class="mdui-text-color-white animated fadeInDown mdui-text-center  mdui-m-b-3" style="animation-delay: 0.4s">HOMEPAGE</div>
-           
-            <nav id="nav" class="mdui-text-center animated fadeInDown" style="animation-delay: 0.6s">
-                   
-                            <li><a href="/">首页</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                            <li><a href="/archives">归档</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                            <li><a href="/tags">标签</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                            <li><a href="/post/about">关于</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                  </nav>
+</div>
+        
+        <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main" role="navigation">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
+			
+			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
+			
+
+		</ul>
+	</div>
+</div>
+
+        <div class="layout-swiper">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      
+      
+      <div class="swiper-slide">
+        <a href="https://xzy.one/post/composer">
+          <div class="swiper-img" style="background-image: url('')">
+          </div>
+          <div class="swiper-slide-mask"></div>
+        </a>
+      </div>
+      
+      
+      <div class="swiper-slide">
+        <a href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">
+          <div class="swiper-img" style="background-image: url('')">
+          </div>
+          <div class="swiper-slide-mask"></div>
+        </a>
+      </div>
+      
+      
+      <div class="swiper-slide">
+        <a href="https://xzy.one/post/301-chong-ding-xiang-ji-he">
+          <div class="swiper-img" style="background-image: url('')">
+          </div>
+          <div class="swiper-slide-mask"></div>
+        </a>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+
+    <div class="swiper-button-prev swiper-button">
+      <i class="fa fa-angle-left" aria-hidden='true'></i>
+    </div>
+
+    <div class="swiper-button-next swiper-button">
+      <i class="fa fa-angle-right" aria-hidden='true'></i>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+        <div class="layout-nav d-none d-md-block">
+  <div class="container">
+    <ul class="layout-nav-list">
+      
+      <li class="layout-nav-item"><a href="https://xzy.one/tag/bdjPAeIZ8" title="Linux">Linux</a></li>
+      
+      <li class="layout-nav-item"><a href="https://xzy.one/tag/a9uQGEafW" title="GFW">GFW</a></li>
+      
+      <li class="layout-nav-item"><a href="https://xzy.one/tag/XgJAH2h7h" title="one">one</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+        <div class="layout-content">
+  <div class="layout-content-main">
+    <div class="container">
+      <div class="row">
+        
+        <article class="card-list col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="layout-card">
+            <div class="layout-card-body">
+              <a class="layout-card-thumb" href="https://xzy.one/post/composer">
+                <div class="layout-thumb" style="background-image: url('')">
                 </div>
-        </header>
-        <div class="mdui-container ">
-                <div class="mdui-row">
-                        <div class="mdui-col-md-8 mdui-col-offset-md-2 mdui-m-t-1">
-                                                         
-                               <article class="mdui-p-a-5 index-list mdui-m-b-3 animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="mdui-typo-body-2 mdui-m-b-1" datetime="2019-10-26 17:35:06">2019-10-26</div>
-                                    <div class="mdui-typo-headline mdui-m-b-3 index-list-title index-guo"><a href="https://xzy.one/post/composer">Composer 相关</a></div>
-                                    <div class="mdui-typo-subheading mdui-m-b-2 index-neirong"></div>
-                                    <div class="index-list-rm index-guo"><a href="https://xzy.one/post/composer">Read More</a></div>
-                                </article>
-                                
-                               <article class="mdui-p-a-5 index-list mdui-m-b-3 animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="mdui-typo-body-2 mdui-m-b-1" datetime="2019-10-11 09:30:04">2019-10-11</div>
-                                    <div class="mdui-typo-headline mdui-m-b-3 index-list-title index-guo"><a href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">批量清除微博关注</a></div>
-                                    <div class="mdui-typo-subheading mdui-m-b-2 index-neirong"></div>
-                                    <div class="index-list-rm index-guo"><a href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">Read More</a></div>
-                                </article>
-                                
-                               <article class="mdui-p-a-5 index-list mdui-m-b-3 animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="mdui-typo-body-2 mdui-m-b-1" datetime="2019-10-09 11:11:25">2019-10-09</div>
-                                    <div class="mdui-typo-headline mdui-m-b-3 index-list-title index-guo"><a href="https://xzy.one/post/301-chong-ding-xiang-ji-he">301重定向集合</a></div>
-                                    <div class="mdui-typo-subheading mdui-m-b-2 index-neirong"></div>
-                                    <div class="index-list-rm index-guo"><a href="https://xzy.one/post/301-chong-ding-xiang-ji-he">Read More</a></div>
-                                </article>
-                                
-                               <article class="mdui-p-a-5 index-list mdui-m-b-3 animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="mdui-typo-body-2 mdui-m-b-1" datetime="2019-10-04 22:18:03">2019-10-04</div>
-                                    <div class="mdui-typo-headline mdui-m-b-3 index-list-title index-guo"><a href="https://xzy.one/post/linux-xiang-guan">Linux 相关</a></div>
-                                    <div class="mdui-typo-subheading mdui-m-b-2 index-neirong"></div>
-                                    <div class="index-list-rm index-guo"><a href="https://xzy.one/post/linux-xiang-guan">Read More</a></div>
-                                </article>
-                                
-                               <article class="mdui-p-a-5 index-list mdui-m-b-3 animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="mdui-typo-body-2 mdui-m-b-1" datetime="2019-10-04 16:10:23">2019-10-04</div>
-                                    <div class="mdui-typo-headline mdui-m-b-3 index-list-title index-guo"><a href="https://xzy.one/post/zi-jian-ti-zi">自建梯子</a></div>
-                                    <div class="mdui-typo-subheading mdui-m-b-2 index-neirong"></div>
-                                    <div class="index-list-rm index-guo"><a href="https://xzy.one/post/zi-jian-ti-zi">Read More</a></div>
-                                </article>
-                                
-                               <article class="mdui-p-a-5 index-list mdui-m-b-3 animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="mdui-typo-body-2 mdui-m-b-1" datetime="2019-10-02 02:59:22">2019-10-02</div>
-                                    <div class="mdui-typo-headline mdui-m-b-3 index-list-title index-guo"><a href="https://xzy.one/post/hello-one">Hello ONE</a></div>
-                                    <div class="mdui-typo-subheading mdui-m-b-2 index-neirong"></div>
-                                    <div class="index-list-rm index-guo"><a href="https://xzy.one/post/hello-one">Read More</a></div>
-                                </article>
-                                
-                                                            <nav class="mdui-m-t-5">
-                                
-                                
-                                </nav>     
+                <div class="layout-thumb-mask"></div>
+              </a>
 
-                        </div>
-                      </div>
-              </div>
-                <footer class="footer mdui-m-t-5 mdui-text-center">
-                  <div class="copyright">
-                      <p>© 2019 Xzy®  All rights reserved.<br>博客使用 <a href="https://gridea.dev/" title="Gridea"><span>Gridea</span></a> 搭建于 <a href="https://pages.github.com/" title="GitHub Pages"><span>GitHub Pages</span></a><br>主题 宋 作者 <a href="https://shanbu.fun/" title="山卜方"><span>山卜方</span></a></p>
+              <div class="layout-card-content">
+                <h2 class="layout-title"><a href="https://xzy.one/post/composer">Composer 相关</a></h2>
+                <div class="layout-meta">
+                  <div class="layout-meta-list">
+                    <span>2019-10-26</span>
                   </div>
-               <nav class="social-links">
-                      <ul>
-                        <li class="social-link"><a href="tencent://Message/?Uin=981005826&websiteName=q-zone.qq.com&Menu=yes" target="_blank"><i class="iconfont icon-qq"></i> </a></li>
-						<li class="social-link"><a href="https://weibo.com/xzylosg" target="_blank"><i class="iconfont icon-weibo"></i></a> </li>
-						<li class="social-link"><a href="https://github.com/xzyone" target="_blank"><i class="iconfont icon-github"></i></a> </li>
-                        <li class="social-link"><a href="https://xzy.one/atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a></li>
-                      </ul>
-					  <b>成家先立业</b>
-                    </nav>
-              </footer>
-    </body>
+                  <div class="layout-meta-list col-right">
+                    <a href="https://xzy.one/post/composer">阅读</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        
+        <article class="card-list col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="layout-card">
+            <div class="layout-card-body">
+              <a class="layout-card-thumb" href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">
+                <div class="layout-thumb" style="background-image: url('')">
+                </div>
+                <div class="layout-thumb-mask"></div>
+              </a>
+
+              <div class="layout-card-content">
+                <h2 class="layout-title"><a href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">批量清除微博关注</a></h2>
+                <div class="layout-meta">
+                  <div class="layout-meta-list">
+                    <span>2019-10-11</span>
+                  </div>
+                  <div class="layout-meta-list col-right">
+                    <a href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">阅读</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        
+        <article class="card-list col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="layout-card">
+            <div class="layout-card-body">
+              <a class="layout-card-thumb" href="https://xzy.one/post/301-chong-ding-xiang-ji-he">
+                <div class="layout-thumb" style="background-image: url('')">
+                </div>
+                <div class="layout-thumb-mask"></div>
+              </a>
+
+              <div class="layout-card-content">
+                <h2 class="layout-title"><a href="https://xzy.one/post/301-chong-ding-xiang-ji-he">301重定向集合</a></h2>
+                <div class="layout-meta">
+                  <div class="layout-meta-list">
+                    <span>2019-10-09</span>
+                  </div>
+                  <div class="layout-meta-list col-right">
+                    <a href="https://xzy.one/post/301-chong-ding-xiang-ji-he">阅读</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        
+        <article class="card-list col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="layout-card">
+            <div class="layout-card-body">
+              <a class="layout-card-thumb" href="https://xzy.one/post/linux-xiang-guan">
+                <div class="layout-thumb" style="background-image: url('')">
+                </div>
+                <div class="layout-thumb-mask"></div>
+              </a>
+
+              <div class="layout-card-content">
+                <h2 class="layout-title"><a href="https://xzy.one/post/linux-xiang-guan">Linux 相关</a></h2>
+                <div class="layout-meta">
+                  <div class="layout-meta-list">
+                    <span>2019-10-04</span>
+                  </div>
+                  <div class="layout-meta-list col-right">
+                    <a href="https://xzy.one/post/linux-xiang-guan">阅读</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        
+        <article class="card-list col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="layout-card">
+            <div class="layout-card-body">
+              <a class="layout-card-thumb" href="https://xzy.one/post/zi-jian-ti-zi">
+                <div class="layout-thumb" style="background-image: url('')">
+                </div>
+                <div class="layout-thumb-mask"></div>
+              </a>
+
+              <div class="layout-card-content">
+                <h2 class="layout-title"><a href="https://xzy.one/post/zi-jian-ti-zi">自建梯子</a></h2>
+                <div class="layout-meta">
+                  <div class="layout-meta-list">
+                    <span>2019-10-04</span>
+                  </div>
+                  <div class="layout-meta-list col-right">
+                    <a href="https://xzy.one/post/zi-jian-ti-zi">阅读</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        
+        <article class="card-list col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="layout-card">
+            <div class="layout-card-body">
+              <a class="layout-card-thumb" href="https://xzy.one/post/hello-one">
+                <div class="layout-thumb" style="background-image: url('')">
+                </div>
+                <div class="layout-thumb-mask"></div>
+              </a>
+
+              <div class="layout-card-content">
+                <h2 class="layout-title"><a href="https://xzy.one/post/hello-one">Hello ONE</a></h2>
+                <div class="layout-meta">
+                  <div class="layout-meta-list">
+                    <span>2019-10-02</span>
+                  </div>
+                  <div class="layout-meta-list col-right">
+                    <a href="https://xzy.one/post/hello-one">阅读</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  //点击加载更多
+  jQuery(document).ready(function ($) {
+    //点击下一页的链接(即那个a标签)
+    $(' .btn-paginator').click(function () {
+      $this = $(this);
+      $this.addClass('loading').text('正在努力加载'); //给a标签加载一个loading的class属性，用来添加加载效果
+      var href = $this.attr('href'); //获取下一页的链接地址
+      if (href != undefined) { //如果地址存在
+        $.ajax({ //发起ajax请求
+          url: href,
+          //请求的地址就是下一页的链接
+          type: 'get',
+          //请求类型是get
+          error: function (request) {
+            //如果发生错误怎么处理
+          },
+          success: function (data) { //请求成功
+            $this.removeClass('loading').text('加载更多'); //移除loading属性
+            var $res = $(data).find('.card-list '); //从数据中挑出文章数据，请根据实际情况更改
+            $('.row').append($res.fadeIn(
+              500)); //将数据加载加进posts-loop的标签中。
+            var newhref = $(data).find('.btn-paginator').attr('href'); //找出新的下一页链接
+            if (newhref != undefined) {
+              $('.btn-paginator').attr('href', newhref);
+            } else {
+              $('.btn-paginator').remove(); //如果没有下一页了，隐藏
+            }
+          }
+        });
+      }
+      return false;
+    });
+  });
+</script>
+
+        	<div class="layout-footer">
+		<div class="layout-footer-main">
+			<div class="container">
+
+				<div class="footer-links d-none d-md-block">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<span class="footer-links-item">
+						<a href="tencent://Message/?Uin=981005826&amp;websiteName=q-zone.qq.com&amp;Menu=yes" target="_blank">
+							<i class="fa fa-qq" aria-hidden="true"></i>
+						</a>
+					</span>
+					
+					
+					
+					<span class="footer-links-item">
+						<a href="https://weibo.com/xzylosg" target="_blank">
+							<i class="fa fa-weibo" aria-hidden="true"></i>
+						</a>
+					</span>
+					
+					
+					
+					<span class="footer-links-item">
+						<a href="https://up.xzy.es/img/logo.png" target="_blank">
+							<i class="fa fa-weixin" aria-hidden="true"></i>
+						</a>
+					</span>
+					
+					
+				</div>
+
+				<div class="footer-copy">
+					
+					© 2019 Xzy®  All rights reserved.
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src='https://xzy.one/media/scripts/main.js'></script>
+	<script type="text/javascript" src='https://xzy.one/media/scripts/swiper.js'></script>
+	<script type="text/javascript" src='https://xzy.one/media/scripts/swiper.min.js'></script>
+    </div>
+</body>
+
 </html>
