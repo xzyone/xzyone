@@ -1,118 +1,103 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>自建梯子 | Xzy® Homepage</title>
+<meta name="description" content="成家先立业" />
+<link rel="shortcut icon" href="https://xzy.one/favicon.ico?v=1574203031375">
+<link rel="stylesheet" href="https://xzy.one/styles/main.css">
 
-<head>
-  <meta charset="UTF-8" />
-<title>自建梯子 - Xzy® Homepage</title>
-<meta name="description" content="成家先立业">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="https://xzy.one/media/js/jquery.min.js"></script>
+<script src="https://xzy.one/media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://xzy.one/media/js/masonry.pkgd.min.js"></script>
+<script src="https://xzy.one/media/js/aos.js"></script>
+<script src="https://xzy.one/media/js/pace.min.js"></script>
+<script src="https://xzy.one/media/js/functions.js"></script>
+    <script src="https://xzy.one/media/js/waterfall.min.js"></script>
+    <script src="https://xzy.one/media/js/prism.min.js"></script>
+    
+  </head>
+  <body>
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://xzy.one"><img src="https://xzy.one/media/images/logo.png" alt=""></a>
+            </div>
+            <!-- start: .main-nav -->
 
-<link type='text/css' rel='stylesheet' href='https://xzy.one/styles/main.css' media='screen' />
-<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                
+                  <li class=""><a href="https://xzy.one" class="menu">首页</a></li>
+                
+                
+                  <li class="" >
+                    <a href="/" class="menu">
+                      首页
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+              </ul>
+            </nav>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
 
-<script type="text/javascript" src='https://xzy.one/media/scripts/jquery.js'></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
-<script >hljs.initHighlightingOnLoad();</script>
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://xzy.one/media/images/a9uQGEafW.jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" datetime="2019-10-04">
+                <i class="fa fa-calendar"></i>2019-10-04
+               </time>
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://xzy.one/tag/a9uQGEafW" class="ctag ctag-0 ctag-a9uQGEafW" aria-label="">GFW</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">自建梯子</h1>
+            </div>
+          </div>
+        </div>  
 
-  <script type="text/javascript" src='https://xzy.one/media/scripts/zan.js'></script>
-  <script type="text/javascript" src='https://xzy.one/media/scripts/av-min.js'></script>
-  <script type="text/javascript" src='https://xzy.one/media/scripts/Valine.min.js'></script>
-</head>
-
-<body>
-  <div class="layout">
-    <div class="layout-header">
-
-	<div class="layout-header-main">
-		<div class="container">
-			<div class="layout-header-logo">
-				<a href="https://xzy.one">
-					<img class="logo" src="https://xzy.one/media/images/site_avatar.png?v=1573905868726" alt="">
-				</a>
-			</div>
-			<div class="layout-header-menu d-md-inline-block d-none">
-				<ul class="layout-navigation-list">
-					
-					<li class="layout-navigation-item"><a title="首页" href="/">首页</a>
-					</li>
-					
-					<li class="layout-navigation-item"><a title="归档" href="/archives">归档</a>
-					</li>
-					
-					<li class="layout-navigation-item"><a title="标签" href="/tags">标签</a>
-					</li>
-					
-					<li class="layout-navigation-item"><a title="关于" href="/post/about">关于</a>
-					</li>
-					
-				</ul>
-			</div>
-			<div class="layout-header-item d-none">
-				<span class="layout-header-action layout-header-search">
-					<i class="fa fa-search" aria-hidden="true"></i>
-				</span>
-			</div>
-			
-			<div class="layout-header-item d-md-inline-block d-none">
-				<a class="ltem-feed" href="atom.xml">
-					<i class="fa fa-rss" aria-hidden="true"></i>
-				</a>
-			</div>
-			
-			<div class="layout-header-nav d-md-none d-inline-block">
-				<div class="layout-header-trigger">
-					<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-    <div class="layout-collapse d-md-none">
-	<div class="layout-collapse-main" role="navigation">
-		<ul class="layout-collapse-list">
-			
-			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
-			
-			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
-			
-			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
-			
-			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
-			
-
-		</ul>
-	</div>
-</div>
-
-    <div class="layout-content">
-      <div class="layout-content-main">
-
-        <div class="container">
-          <div class="layout-post">
-            <div class="layout-post-body">
-              <div class="row">
-
-                <div class="col-md-12 col-lg-10">
-                  <div class="layout-post-main m-right m-md-right">
-                    <div class="layout-post-header">
-                      <h1 class="layout-post-title">自建梯子</h1>
-                      <div class="layout-post-meta">
-                        <div class="layout-meta-list">
-                          <span>2019-10-04</span>
-                        </div>
-                        <div class="layout-meta-list">
-                           <a href="https://xzy.one/tag/a9uQGEafW" class="post--keyword"
-                            data-title="GFW" data-type="post_tag" data-term-id="39">GFW</a>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="layout-post-content">
-                      <div class="layout-post-item">
-                        
-                        <!-- more -->
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <!-- more -->
 <p>自用代码记录，备用🤞🤞🤞</p>
 <p>一键安装 ✈️✈️✈️<br>
 使用 root 用户登录，运行以下命令：</p>
@@ -141,19 +126,52 @@ firewall-cmd --reload
 状态：/etc/init.d/shadowsocks status
 </code></pre>
 
-                      </div>
-                    </div>
-                    <div class="layout-post-social">
-                      <div class="layout-social-item">
-                        <div id="/post/zi-jian-ti-zi/" class="leancloud-visitors view" data-flag-title="自建梯子">
-                          <span class="post-meta-item-text">阅读 </span>
-                          <span class="leancloud-visitors-count"></span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    
-                    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://xzy.one/media/images/bdjPAeIZ8.jpg');"></div>
+                 <a href="https://xzy.one/post/linux-xiang-guan" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2019-10-04">2019-10-04</time>
+                  <h4 class="title white no-margin">Linux 相关</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://xzy.one/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://xzy.one/media/images/XgJAH2h7h.jpg');"></div>
+                 <a href="https://xzy.one/post/hello-one" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2019-10-02">2019-10-02</time>
+                  <h4 class="title white no-margin">Hello ONE</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://xzy.one/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+
+              <div id="comments" class="bg-white hosted ">
+
+              
+                
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -174,103 +192,130 @@ firewall-cmd --reload
 
 </script>
 
-                    
-
-                    
-                    
-
-                    <div class="layout-comments"></div>
-                    <script type="text/javascript">
-                      new Valine({
-                        av: AV,
-                        el: '.layout-comments',
-                        appId: 'e7hSFIsJCyJg2uaQaYDWtesc-MdYXbMMI',
-                        appKey: 'LsdlyJ6vfXjJAk3JYASt5KJ4',
-                        notify: false,
-                        verify: false,
-                        visitor: true,
-                        avatar: 'mp',
-                        placeholder: '加入讨论...'
-                      })
-                    </script>
-
-                  </div>
-                </div>
-
-                <div class="col-md-12 col-lg-2 d-none d-lg-block">
-                  <div class="layout-post-sidebar">
-                    <div class="layout-sidebar-item">
-                      
-                    </div>
-                  </div>
-                </div>
-
+                
+                
+              
+                <div class="clear"></div>
               </div>
+
+              <div class="clear"></div>
             </div>
           </div>
+      </main>
+
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://xzy.one/tag/bdjPAeIZ8" class="ctag ctag-0 ctag-bdjPAeIZ8" aria-label="">Linux</a>
+                    
+                      <a href="https://xzy.one/tag/a9uQGEafW" class="ctag ctag-1 ctag-a9uQGEafW" aria-label="">GFW</a>
+                    
+                      <a href="https://xzy.one/tag/XgJAH2h7h" class="ctag ctag-2 ctag-XgJAH2h7h" aria-label="">one</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://xzy.one/images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">Xzy® Homepage</a></h4>
+                    <p class="founder">成家先立业</p>
+                    <div class="social">
+                      
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+</div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
         </div>
 
-      </div>
+        <div class="logo">
+          <a href="https://xzy.one"><img class="" src="https://xzy.one/media/images/logo.png" alt=""></a>
+        </div>
+        <p class="published border-effect">Published with <a href="https://gridea.dev/" target="_blank">Gridea</a></p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    <div class="clear"></div>
+
+<script>
+jQuery(document).ready(function($){
+  var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+    var location_href = window.location.href.replace(parse_url,'$3');
+    $('.post-excerpt a:not(:has(img)),.post-content a:not(:has(img)),.author-name a').hover(function() {
+        var this_href = $(this).attr('href');
+        var replace_href = this_href.replace(parse_url,'$3');
+        if ( this_href != replace_href && location_href != replace_href){$(this).attr('target','_blank');}
+    });
+})
+</script>
+
+
+      <script src="https://xzy.one/media/js/jquery.magnific-popup.min.js"></script>
+      <script type="text/javascript">
+       jQuery(document).ready(function($){
+        
+          $("photos img").each(function(){
+              var _a = $("<a></a>").attr("href",this.src);
+              $(this).wrap("<div class='photo'></div>").wrap(_a);
+          })
+  
+          var photos = document.querySelector('photos');
+          if(photos){
+              waterfall(photos);
+          }
+          
+          $(window).resize(function() {
+             if(photos){
+                  waterfall(photos);
+            }
+          });
+        
+      });
+      </script>
+
     </div>
-
-    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
-
-    	<div class="layout-footer">
-		<div class="layout-footer-main">
-			<div class="container">
-
-				<div class="footer-links d-none d-md-block">
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					<span class="footer-links-item">
-						<a href="tencent://Message/?Uin=981005826&amp;websiteName=q-zone.qq.com&amp;Menu=yes" target="_blank">
-							<i class="fa fa-qq" aria-hidden="true"></i>
-						</a>
-					</span>
-					
-					
-					
-					<span class="footer-links-item">
-						<a href="https://weibo.com/xzylosg" target="_blank">
-							<i class="fa fa-weibo" aria-hidden="true"></i>
-						</a>
-					</span>
-					
-					
-					
-					<span class="footer-links-item">
-						<a href="https://up.xzy.es/img/logo.png" target="_blank">
-							<i class="fa fa-weixin" aria-hidden="true"></i>
-						</a>
-					</span>
-					
-					
-				</div>
-
-				<div class="footer-copy">
-					
-					© 2019 Xzy®  All rights reserved.
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<script type="text/javascript" src='https://xzy.one/media/scripts/main.js'></script>
-	<script type="text/javascript" src='https://xzy.one/media/scripts/swiper.js'></script>
-	<script type="text/javascript" src='https://xzy.one/media/scripts/swiper.min.js'></script>
-
-  </div>
-</body>
-
+    <!-- end: #wrapper -->
+  </body>
 </html>
