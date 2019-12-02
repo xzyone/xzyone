@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xzy.one</id>
     <title>Xzy® Homepage</title>
-    <updated>2019-12-02T21:56:20.540Z</updated>
+    <updated>2019-12-02T21:57:31.985Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xzy.one"/>
     <link rel="self" href="https://xzy.one/atom.xml"/>
@@ -15,18 +15,18 @@
         <id>https://xzy.one/post/gooooodbye-to-region-limited</id>
         <link href="https://xzy.one/post/gooooodbye-to-region-limited">
         </link>
-        <updated>2019-12-01T17:31:17.000Z</updated>
+        <updated>2019-12-01T10:31:17.000Z</updated>
         <summary type="html"><![CDATA[<p>我搞成功了路由器视频翻回国红红火火恍恍惚惚，现在腾讯优酷爱奇艺TV端都无地域限制了。太开心了。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>我搞成功了路由器视频翻回国红红火火恍恍惚惚，现在腾讯优酷爱奇艺TV端都无地域限制了。太开心了。</p>
 <!-- more -->
-<p>使用新路由+Pandora固件自带的“FakeinChina”脚本，在国内服务器安装ssr作为视频软件回国服务器。安装完成后测试：网页端三家都可用，电视端优酷可用，Android端腾讯爱奇艺可用，IOS端腾讯可用，TV端优酷可用。<br>
-“这也不顶事呀！”<br>
-经查发现作者提供的地址不完整，需要自己抓包，于是继续折腾。<br>
-作者给的方法tcpdump过于笼统，而且需linux端操作过于繁琐。而自己的创维电视盒子太封闭，不能连VPN也就算了，WIFI中连http代理都不给设置（hetui）。<br>
-经聪明的大脑分析，通过Windows抓包工具Fiddler的局域网代理功能，使用手机WIFI连接代理，然后盒子连接手机热点，这样打开盒子中的程序进行地址抓包。想到这里觉得自己太聪明了，于是按部就班进行操作。结果，手机热点分享出去的网络抓不到。干，好机车唉。<br>
-突然想到，手机和盒子都是安卓，♂本质♂上并没有什么不同。所以可以直接在手机上下载电视端的应用进行抓包，聪明的智商再一次占领高地！这次一下就成功抓取了爱奇艺的地址(<em>.</em>.g*<em>.c</em>)，成功后激动的跳了起来，继而抓取到了腾讯视频(<em>.</em>.a*******.c<em>和</em>.*.qq.com)。爽。 <em>加星号是因为我这个人没什么共享精神，方法写上了需要的话自己去抓</em><br>
-再也不用担心地域限制的困扰了LOL</p>
+<p>使用新路由+Pandora固件自带的“FakeinChina”脚本，在国内服务器安装ssr作为视频软件回国服务器。安装完成后测试：网页端三家都可用，电视端优酷可用，Android端腾讯爱奇艺可用，IOS端腾讯可用，TV端优酷可用。</p>
+<p>“这也不顶事呀！”</p>
+<p>经查发现作者提供的地址不完整，需要自己抓包，于是继续折腾。</p>
+<p>作者给的方法tcpdump过于笼统，而且需linux端操作过于繁琐。而自己的创维电视盒子太封闭，不能连VPN也就算了，WIFI中连http代理都不给设置（hetui）。</p>
+<p>经聪明的大脑分析，通过Windows抓包工具Fiddler的局域网代理功能，使用手机WIFI连接代理，然后盒子连接手机热点，这样打开盒子中的程序进行地址抓包。想到这里觉得自己太聪明了，于是按部就班进行操作。结果，手机热点分享出去的网络抓不到。干，好机车唉。</p>
+<p>突然想到，手机和盒子都是安卓，♂本质♂上并没有什么不同。所以可以直接在手机上下载电视端的应用进行抓包，聪明的智商再一次占领高地！这次一下就成功抓取了爱奇艺的地址(<em>.</em>.g*<em>.c</em>)，成功后激动的跳了起来，继而抓取到了腾讯视频(<em>.</em>.a*******.c<em>和</em>.*.qq.com)。爽。 <em>加星号是因为我这个人没什么共享精神，方法写上了需要的话自己去抓</em></p>
+<p>再也不用担心地域限制的困扰了LOL</p>
 ]]></content>
     </entry>
     <entry>
