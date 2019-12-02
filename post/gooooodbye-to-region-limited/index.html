@@ -2,7 +2,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-<title>自建梯子 | Xzy® Homepage</title>
+<title>GOOOOODBYE TO REGION LIMITED | Xzy® Homepage</title>
 <meta name="description" content="成家先立业" />
 <link rel="shortcut icon" href="https://xzy.one/media/images/favicon.ico?v=1575323614366">
 <link rel="stylesheet" href="https://xzy.one/styles/main.css">
@@ -56,48 +56,27 @@
 
       <div class="post animated fadeInDown">
         <div class="post_title">
-          <h2><a>自建梯子</a></h2>
-          <span class="date">2019-10-04</span>
+          <h2><a>GOOOOODBYE TO REGION LIMITED</a></h2>
+          <span class="date">2019-12-02</span>
         </div>
 
               <div class="post_content markdown">
-                <!-- more -->
-<p>自用代码记录，备用🤞🤞🤞</p>
-<p>一键安装 ✈️✈️✈️<br>
-使用 root 用户登录，运行以下命令：</p>
-<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
-chmod +x shadowsocksR.sh
-./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
-</code></pre>
-<p>安装BBR</p>
-<pre><code>wget https://github.com/tcp-nanqinlang/general/releases/download/3.4.5.1/tcp_nanqinlang-pro-3.4.5.1.sh
-bash tcp_nanqinlang-pro-3.4.5.1.sh
-</code></pre>
-<p>四合一</p>
-<pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;
-chmod +x tcp.sh
-./tcp.sh
-</code></pre>
-<p>防火墙添加端口：</p>
-<pre><code>firewall-cmd --permanent --zone=public --add-port=25000-25100/tcp
-firewall-cmd --permanent --zone=public --add-port=25000-25100/udp
-firewall-cmd --reload
-</code></pre>
-<p>命令</p>
-<pre><code>开启：/etc/init.d/shadowsocks start
-停止：/etc/init.d/shadowsocks stop
-重启：/etc/init.d/shadowsocks restart
-状态：/etc/init.d/shadowsocks status
-</code></pre>
+                <p>我搞成功了路由器视频翻回国红红火火恍恍惚惚，现在腾讯优酷爱奇艺TV端都无地域限制了。太开心了。</p>
+<!-- more -->
+<p>使用新路由+Pandora固件自带的“FakeinChina”脚本，在国内服务器安装ssr作为视频软件回国服务器。安装完成后测试：网页端三家都可用，电视端优酷可用，Android端腾讯爱奇艺可用，IOS端腾讯可用，TV端优酷可用。<br>
+“这也不顶事呀！”<br>
+经查发现作者提供的地址不完整，需要自己抓包，于是继续折腾。<br>
+作者给的方法tcpdump过于笼统，而且需linux端操作过于繁琐。而自己的创维电视盒子太封闭，不能连VPN也就算了，WIFI中连http代理都不给设置（hetui）。<br>
+经聪明的大脑分析，通过Windows抓包工具Fiddler的局域网代理功能，使用手机WIFI连接代理，然后盒子连接手机热点，这样打开盒子中的程序进行地址抓包。想到这里觉得自己太聪明了，于是按部就班进行操作。结果，手机热点分享出去的网络抓不到。干，好机车唉。<br>
+突然想到，手机和盒子都是安卓，♂本质♂上并没有什么不同。所以可以直接在手机上下载电视端的应用进行抓包，聪明的智商再一次占领高地！这次一下就成功抓取了爱奇艺的地址*.<em>.gitv.cn，成功后激动的跳了起来，继而抓取到了腾讯视频（</em>.<em>.atianqi.com和</em>.*.qq.com）。爽。<br>
+再也不用担心地域限制的困扰了LOL</p>
 
               </div>
 
             <div class="post_footer">
               <div class="meta">
                 <div class="info">
-                  <span class="field tags"><i class="fa fa-flask"></i>
-                    <a href="https://xzy.one/tag/a9uQGEafW" class="tag">GFW</a>
-                  </span>
+                  <span class="field tags"><i class="fa fa-flask"></i></span>
                 </div>
               </div>
             </div>
