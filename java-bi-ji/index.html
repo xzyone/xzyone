@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 
 <head>
-	<meta charset="UTF-8" />
-<title>Xzy® Homepage</title>
+  <meta charset="UTF-8" />
+<title>Java笔记 - Xzy® Homepage</title>
 <meta name="description" content="成家先立业">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -20,8 +20,8 @@
 </head>
 
 <body>
-	<div class="layout theme-dark">
-		<div class="layout-header">
+  <div class="layout theme-dark">
+    <div class="layout-header">
 
 	<div class="layout-header-main">
 		<div class="container">
@@ -101,7 +101,7 @@
 	</div>
 
 </div>
-		<div class="layout-collapse d-md-none">
+    <div class="layout-collapse d-md-none">
 	<div class="layout-collapse-main">
 		<ul class="layout-collapse-list">
 			
@@ -118,171 +118,126 @@
 	</div>
 </div>
 
-		<div class="layout-content">
-			<div class="layout-content-main">
-				<div class="container">
-					<div class="row justify-content-lg-center">
-						<div class="col-12 col-lg-9">
-							<div class="layout-archive">
-								
-								
+    <div class="layout-content">
+      <div class="layout-content-main">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="layout-post">
+                <div class="layout-post-body">
+                  <div class="row">
 
-								<div class="card">
-									<div class="card-header">
-										<div class="header-content">
-											<div class="title">2019</div>
-										</div>
+                    <div class="col-12 col-lg-10">
+                      <div class="layout-post-main m-right m-md-right">
+                        <div class="layout-post-header">
+                          <h1 class="layout-post-title">Java笔记</h1>
+                          <div class="layout-post-meta">
+                            <div class="item">
+                              
+                            </div>
+                            <div class="item">
+                              <span>2019-10-05</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout-post-content">
+                          <div class="layout-post-item">
+                            
+                            <!-- more -->
+<p>Main: public static void main(String[] args)</p>
+<p>\n 换行 \t 制表符(多个空格)</p>
+<p>关键字所有字母都是小写</p>
+<p>在java中，数据类型分为基本数据类型和引用数据类型，其中基本数据类型有八种，其余全是引用数据类型。</p>
+<hr>
+<h3 id="八种基本数据类型">八种基本数据类型</h3>
+<p><strong>整数类型</strong><br>
+byte 一个字节=8bit（-128~127，声明byte赋值不能超过这个范围）<br>
+short 2字节 (-2<sup>15~2</sup>15-1)  int i = 1<br>
+int   4字节 (-2<sup>31~2</sup>31-1)  short s = 1<br>
+long  8字节 (-2<sup>63~2</sup>63-1)  long l = 3l (赋值后加l表示long类型)</p>
+<p><strong>浮点类型</strong><br>
+double d = 1.22<br>
+float f = 1.22f</p>
+<p><strong>字符类型</strong>：用英文单引号括起来的单个的字母数字符号<br>
+char c1 = 'c'<br>
+char c2 = '1'<br>
+char c3 = '%'<br>
+char c4 = '\n'<br>
+char c5 = ''</p>
+<p>**布尔类型（正负） **<br>
+boolean b1 = true<br>
+boolean b2 = false</p>
+<h3 id="引用数据类型">引用数据类型</h3>
+<p><strong>字符串</strong>：由多个字母数字符号共同组成的一个串，用双引号括起来<br>
+String str == &quot;Hello world&quot;;<br>
+System.out.println(str);<br>
+String是引用类型，可以使用null作为值</p>
+<p>String s0 = &quot;Hello&quot;;<br>
+String s1 = &quot;Hello&quot;;<br>
+String s2 = &quot;He&quot; + &quot;ll&quot; + &quot;o&quot;; 在内存中只存在一个“Hello”<br>
+假设&quot;Hello&quot;的内存地址为xxxx，当声明s0变量时给s0变量赋值&quot;Hello&quot;，实际是让s0变量引用“hello”的内存地址xxxx;当再声明s1时同样引用同一个地址xxxx；而int i0=1和int i1=1 则会在内存中储存两个1的值</p>
+<hr>
+<p>char类型数据与数字进行计算时，转化为相应ASCII码进行计算</p>
+<p>整数\整数 舍弃小数部分<br>
+int = 0;<br>
+int k = i++：k=0,i=1<br>
+int k = ++i: i=1,K=1</p>
+<p>字符串的+=是拼接</p>
 
-									</div>
-									<div class="card-body">
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://xzy.best/gooooodbye-to-region-limited/"
-													style="background-image: url('https://xzy.best/images/avatar.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://xzy.best/gooooodbye-to-region-limited/">GOOOOODBYE TO REGION LIMITED</a>
-													<div class="time">2019-12-01</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://xzy.best/composer/"
-													style="background-image: url('https://xzy.best/images/avatar.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://xzy.best/composer/">Composer 相关</a>
-													<div class="time">2019-10-26</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://xzy.best/pi-liang-qing-chu-wei-bo-guan-zhu/"
-													style="background-image: url('https://xzy.best/images/avatar.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://xzy.best/pi-liang-qing-chu-wei-bo-guan-zhu/">批量清除微博关注</a>
-													<div class="time">2019-10-11</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://xzy.best/301-chong-ding-xiang-ji-he/"
-													style="background-image: url('https://xzy.best/images/avatar.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://xzy.best/301-chong-ding-xiang-ji-he/">301重定向集合</a>
-													<div class="time">2019-10-09</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://xzy.best/linux-xiang-guan/"
-													style="background-image: url('https://xzy.best/images/avatar.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://xzy.best/linux-xiang-guan/">Linux 相关</a>
-													<div class="time">2019-10-05</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://xzy.best/zi-jian-ti-zi/"
-													style="background-image: url('https://xzy.best/images/avatar.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://xzy.best/zi-jian-ti-zi/">自建梯子</a>
-													<div class="time">2019-10-04</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://xzy.best/hello-one/"
-													style="background-image: url('https://xzy.best/images/avatar.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://xzy.best/hello-one/">Hello ONE</a>
-													<div class="time">2019-10-02</div>
-												</div>
-											</div>
-										</div>
-										
-										
-									</div>
-								</div>
-								
-							</div>
+                          </div>
+                        </div>
+                        <div class="layout-post-social">
+                          <div class="item reader">
+                            <div id="/post/java-bi-ji/" class="leancloud-visitors view"
+                              data-flag-title="Java笔记">
+                              <span class="post-meta-item-text">阅读 </span>
+                              <span class="leancloud-visitors-count"></span>
+                            </div>
+                          </div>
+                        </div>
 
-							<div class="layout-paginator">
-								<div class="paginator row">
-									<div class="col-6">
-										
-										<a class="btn disabled btn-paginator width-100">上一页</a>
-										
-									</div>
-									<div class="col-6">
-										
-										<a class="btn disabled btn-paginator width-100">下一页</a>
-										
-									</div>
-								</div>
-							</div>
+                        <div class="layout-post-navigation">
+                          <div class="navigation-list">
+                            
+                          </div>
+                        </div>
 
-						</div>
-					</div>
+                        <div class="layout-comments"></div>
+                        
+                      </div>
+                    </div>
 
-				</div>
-			</div>
-		</div>
+                    <div class="col-12 col-lg-2 d-none d-lg-block">
+                      <div class="layout-post-sidebar">
+                        <div class="layout-sidebar-item">
+                          <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%85%AB%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">八种基本数据类型</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">引用数据类型</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-			<div class="layout-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+
+    	<div class="layout-footer">
 
 		<div class="container">
 			<div class="row justify-content-lg-center">
@@ -360,7 +315,8 @@
 
 	<script type="text/javascript" src='https://xzy.best/media/scripts/main.js'></script>
 	
-	</div>
+
+  </div>
 </body>
 
 </html>
