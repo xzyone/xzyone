@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://xzy.one</id>
+    <id>https://xzyone.github.io/xzyone/</id>
     <title>Xzy® Homepage</title>
-    <updated>2019-12-02T21:57:31.985Z</updated>
+    <updated>2020-06-18T12:31:49.914Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://xzy.one"/>
-    <link rel="self" href="https://xzy.one/atom.xml"/>
+    <link rel="alternate" href="https://xzyone.github.io/xzyone/"/>
+    <link rel="self" href="https://xzyone.github.io/xzyone/atom.xml"/>
     <subtitle>成家先立业</subtitle>
-    <logo>https://xzy.one/images/avatar.png</logo>
-    <icon>https://xzy.one/favicon.ico</icon>
-    <rights>All rights reserved 2019, Xzy® Homepage</rights>
+    <logo>https://xzyone.github.io/xzyone/images/avatar.png</logo>
+    <icon>https://xzyone.github.io/xzyone/favicon.ico</icon>
+    <rights>All rights reserved 2020, Xzy® Homepage</rights>
     <entry>
         <title type="html"><![CDATA[GOOOOODBYE TO REGION LIMITED]]></title>
-        <id>https://xzy.one/post/gooooodbye-to-region-limited</id>
-        <link href="https://xzy.one/post/gooooodbye-to-region-limited">
+        <id>https://xzyone.github.io/xzyone/post/gooooodbye-to-region-limited/</id>
+        <link href="https://xzyone.github.io/xzyone/post/gooooodbye-to-region-limited/">
         </link>
         <updated>2019-12-01T10:31:17.000Z</updated>
         <summary type="html"><![CDATA[<p>我搞成功了路由器视频翻回国红红火火恍恍惚惚，现在腾讯优酷爱奇艺TV端都无地域限制了。太开心了。</p>
@@ -31,8 +31,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Composer 相关]]></title>
-        <id>https://xzy.one/post/composer</id>
-        <link href="https://xzy.one/post/composer">
+        <id>https://xzyone.github.io/xzyone/post/composer/</id>
+        <link href="https://xzyone.github.io/xzyone/post/composer/">
         </link>
         <updated>2019-10-26T15:35:06.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -42,8 +42,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[批量清除微博关注]]></title>
-        <id>https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu</id>
-        <link href="https://xzy.one/post/pi-liang-qing-chu-wei-bo-guan-zhu">
+        <id>https://xzyone.github.io/xzyone/post/pi-liang-qing-chu-wei-bo-guan-zhu/</id>
+        <link href="https://xzyone.github.io/xzyone/post/pi-liang-qing-chu-wei-bo-guan-zhu/">
         </link>
         <updated>2019-10-11T07:30:04.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -62,8 +62,8 @@ $('[node-type=&quot;ok&quot;]').click();
     </entry>
     <entry>
         <title type="html"><![CDATA[301重定向集合]]></title>
-        <id>https://xzy.one/post/301-chong-ding-xiang-ji-he</id>
-        <link href="https://xzy.one/post/301-chong-ding-xiang-ji-he">
+        <id>https://xzyone.github.io/xzyone/post/301-chong-ding-xiang-ji-he/</id>
+        <link href="https://xzyone.github.io/xzyone/post/301-chong-ding-xiang-ji-he/">
         </link>
         <updated>2019-10-09T09:11:25.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -133,8 +133,8 @@ RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]
     </entry>
     <entry>
         <title type="html"><![CDATA[Linux 相关]]></title>
-        <id>https://xzy.one/post/linux-xiang-guan</id>
-        <link href="https://xzy.one/post/linux-xiang-guan">
+        <id>https://xzyone.github.io/xzyone/post/linux-xiang-guan/</id>
+        <link href="https://xzyone.github.io/xzyone/post/linux-xiang-guan/">
         </link>
         <updated>2019-10-04T20:18:03.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -146,8 +146,8 @@ RewriteRule ^index.php$ https://www.xzy.one/ [R=301,L]
     </entry>
     <entry>
         <title type="html"><![CDATA[自建梯子]]></title>
-        <id>https://xzy.one/post/zi-jian-ti-zi</id>
-        <link href="https://xzy.one/post/zi-jian-ti-zi">
+        <id>https://xzyone.github.io/xzyone/post/zi-jian-ti-zi/</id>
+        <link href="https://xzyone.github.io/xzyone/post/zi-jian-ti-zi/">
         </link>
         <updated>2019-10-04T14:10:23.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -182,8 +182,8 @@ firewall-cmd --reload
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello ONE]]></title>
-        <id>https://xzy.one/post/hello-one</id>
-        <link href="https://xzy.one/post/hello-one">
+        <id>https://xzyone.github.io/xzyone/post/hello-one/</id>
+        <link href="https://xzyone.github.io/xzyone/post/hello-one/">
         </link>
         <updated>2019-10-02T00:59:22.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
